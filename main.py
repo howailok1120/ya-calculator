@@ -1,3 +1,26 @@
+# 1) YE: 31 Dec 2023
+# Answer: YA 2023/24
+# PTR Submission Deadline: 15 Aug 2024
+
+# 2) YE: 31 Mar 2023
+# Answer: YA 2022/23
+# PTR Submission Deadline: 15 Nov 2023
+
+# 3) YE: 30 May 2023
+# Answer: YA 2023/24
+# PTR Submission Deadline: 15 Nov 2023
+
+# 4) YE: 1 Apr 2023
+# Answer: YA 2023/24
+# PTR Submission Deadline: 30 Apr 2023 
+
+# 5) 31 Mar 2023 with adjusted loss
+# Answer: YA 2022/23
+# PTR Submission Deadline: 31 Jan 2024
+
+# 6) 1st PTR 
+# PTR Submission Deadline 3 months after issue date of PTR
+
 from datetime import datetime
 import os
 
