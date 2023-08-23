@@ -1,5 +1,4 @@
-For Hong Kong Limited Company
-Profit Tax Return submission deadline
+For calculating Hong Kong Limited Company's Profit Tax Return submission deadline
 
 MIT License
 Created by Leo Ho
