@@ -39,6 +39,7 @@ while True:
 
     # Convert the input string to a datetime object
     input_date = datetime.strptime(date_input, "%d/%m/%Y")
+    input_month_day = input_date.replace(year=2000)  # Replace the year with a constant value (2000 in this case)
 
     # Extract the month value from the input date
     input_month = input_date.strftime("%b")  # Returns the abbreviated month name
@@ -46,20 +47,20 @@ while True:
     # Extract the year value from the input date
     input_year = input_date.year
 
-    # Define the start and end dates for the comparison
-    start_date_m_code = datetime(2023, 1, 1)
-    end_date_m_code = datetime(2023, 3, 31)
-    start_date_d_code = datetime(2023, 12, 1)
-    end_date_d_code = datetime(2023, 12, 31)
+    # Define the start and end dates for the comparison (with year set to 2000)
+    start_date_m_code = datetime(2000, 1, 1)
+    end_date_m_code = datetime(2000, 3, 31)
+    start_date_d_code = datetime(2000, 12, 1)
+    end_date_d_code = datetime(2000, 12, 31)
 
     # Perform the date comparison
-    if start_date_m_code <= input_date <= end_date_m_code:
+    if start_date_m_code <= input_month_day <= end_date_m_code:
         print("")
         print(f"Result: 'M Code', the standard deadline should be 15 Nov {input_year}")
         print(f"Adjusted loss could extended to 31 Jan {input_year}")
         print("")
         
-    elif start_date_d_code <= input_date <= end_date_d_code:
+    elif start_date_d_code <= input_month_day <= end_date_d_code:
         print("")
         print(f"Result: 'D Code', the standard deadline should be 15 Aug {input_year + 1}")
         print("Loss extension not available")
