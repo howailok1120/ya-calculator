@@ -21,6 +21,7 @@
 # 6) 1st PTR 
 # PTR Submission Deadline 3 months after issue date of PTR
 
+
 from datetime import datetime
 import os
 
@@ -30,6 +31,10 @@ def clear():
 clear()
 
 while True:
+    print("PTR Year of Assessment Calculator with standard submission deadline.")
+    print("Created by Leo Ho, all rights reserved under MIT License.")
+    print("Github: https://github.com/howailok1120")
+    print("")
     date_input = input("Enter year-end date (dd/mm/yyyy): ")
 
     # Convert the input string to a datetime object
